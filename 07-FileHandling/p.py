@@ -89,4 +89,3 @@ if __name__ == '__main__':
     print(p10(['asddaasd','aeryhery','asd','a'], 3))
     print(p11("Lucyferaaf asdasd asdasdas"))
     print(p12('dasdsa asdasd dsadasd dasd', 1))
-    
