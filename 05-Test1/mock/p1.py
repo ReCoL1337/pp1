@@ -8,14 +8,15 @@ for the purchased product.
 def f(n):
     coins = 0
     coins += n//5
+    print(coins)
     n %= 5
+    print(n)
     coins += n//2
+    print(coins)
     n %= 2
+    print(n)
     coins += n
+    print(coins)
     return coins
 
-if __name__ == '__main__':
-    #check your program in this place
-    print(f(9))
-    print(f(10))
-    print(f(16))
+print(f(9))
