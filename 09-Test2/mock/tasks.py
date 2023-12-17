@@ -161,8 +161,10 @@ def p(w: list):
         n.sort()
         if n[0] > 0:
             count += 1
-    return count
+            yield count
 
+for i in p([[-3,5],[3,3],[4,4],[-4,-5],[4,-5]]):
+    print(i)
 
 def r(s: str):
     import re
@@ -174,5 +176,4 @@ def r(s: str):
 
 def a(a):
     import re
-    r = re.sub(r'\D','+',a)
-    return eval(r)
+    return eval(re.sub(r'\D','+',a))
