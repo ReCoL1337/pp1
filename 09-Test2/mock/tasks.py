@@ -151,6 +151,28 @@ def p224():
     except(FileNotFoundError):
         print('File not found :(')
     except(TypeError):
-        print('Ya fucked somethin up m8')
+        print('Ya fucked somethin up')
         
-p224()
+
+
+def p(w: list):
+    count = 0
+    for n in w:
+        n.sort()
+        if n[0] > 0:
+            count += 1
+    return count
+
+
+def r(s: str):
+    import re
+    if re.match(r'^[A-Z]{1,2}\d{1,4}$', s) is not None:
+        return True
+    else:
+        return False
+    
+
+def a(a):
+    import re
+    r = re.sub(r'\D','+',a)
+    return eval(r)
